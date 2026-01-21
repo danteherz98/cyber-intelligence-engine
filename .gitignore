@@ -1,0 +1,14 @@
+# Entorno virtual (No queremos subir gigas de librerías)
+venv/
+.env
+
+# Base de datos local (Contiene tus noticias y datos personales)
+*.db
+
+# Logs y archivos temporales
+*.txt
+*.log
+__pycache__/
+
+# Archivos de configuración de macOS
+.DS_Store
