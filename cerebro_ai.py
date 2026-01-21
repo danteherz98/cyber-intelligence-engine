@@ -1,10 +1,14 @@
+import os
 import sqlite3
 from google import genai
+from dotenv import load_dotenv
 import time
 import re
 
+load_dotenv()
+
 # --- CONFIGURACIÓN ---
-API_KEY = "AIzaSyAOQwZOq7k4nIJvlZoe7jlRDzaWg15EIVw" 
+API_KEY = os.getenv("GEMINI_API_KEY")
 DB_NAME = "ciber_inteligencia.db"
 
 client = genai.Client(api_key=API_KEY)
